@@ -23,7 +23,7 @@
 %% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
 % \documentclass[10pt,a4paper,normalphoto]{altacv}
 
-\documentclass[10pt,a4paper]{altacv}
+\documentclass[11pt,letterpaper]{altacv}
 
 %% AltaCV uses the fontawesome and academicon fonts
 %% and packages.
@@ -36,7 +36,7 @@
 
 
 % Change the page layout if you need to
-\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+\geometry{left=1cm,right=9cm,marginparwidth=7.0cm,marginparsep=1.2cm,top=2.0cm,bottom=1.25cm}
 
 % Change the font if you want to.
 
@@ -69,18 +69,18 @@
 \begin{document}
 \name{Simon Zeng}
 \tagline{Software Developer}
-\photo{2.8cm}{pic}
+% \photo{2.8cm}{pic2}
 \personalinfo{%
   % Not all of these are required!
   % You can add your own with \printinfo{symbol}{detail}
   \email{simon.zeng@uwaterloo.ca}
   \phone{613-983-9079}
   % \mailaddress{58 Akenhead Crescent, Kanata, ON, K2T0B4}
-  % \location{}
   \homepage{s-zeng.github.io}
   % \twitter{@twitterhandle}
   \linkedin{linkedin.com/in/s-zeng1}
   \github{github.com/s-zeng}
+  % \printinfo{UW}{20769883}
   %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
 %   \orcid{orcid.org/0000-0000-0000-0000}
 }
@@ -98,6 +98,7 @@
 %% not need to align the top of the contents to any
 %% \cvsection title in the "main" bar.
 \cvsection[sidebar]{Experience}
+% \cvsection{Experience}
 
 \cvevent{Performance Engineering/Test Automation Co-op}{CENX}{July 2017 -- September 2017}{Ottawa, Ontario}
 Developed low-level network interface technologies in order to maximize artificial 
@@ -121,17 +122,23 @@ development using web technologies such as Ruby on Rails and node.js
 \divider
 
 \cvevent{Volunteer STEM Camp Counsellor}{Virtual Ventures}{July 2015 -- August 2015}{Ottawa, Ontario}
-Assisted in lessons and activities focusing on programming, robotics, and 
+Taught lessons and lead activities focusing on programming, robotics, and 
 physics for children aged 9-12
 
 \bigskip
 
 \cvsection{Projects}
 
+% \cvevent{Soapstone}{github.com/Ederator1/ARSoapstone}{}{}
+% An Android app that uses Augmented Reality to allow users to place virtual 
+% graffiti, tags, and messages anywhere in the world.
+
+% \divider
+
 \cvevent{Neural Network Based Automatic Midi Music Generator}{github.com/s-zeng/rag-shenanigann}{}{}
 A combination of curated tools and original scripts that collectively automate 
 the process of generating original music tracks, based on the style of music 
-files provided as training data
+files provided as training data.
 % \begin{itemize}
 % \item Details
 % \end{itemize}
@@ -139,15 +146,14 @@ files provided as training data
 \divider
 
 \cvevent{Discord API Music Player Bot}{github.com/s-zeng/Zengyatta}{}{}
-Bot written for the Discord voice and messaging client that can play audio in 
+A bot written for the Discord voice and messaging client that can play audio in 
 voice channels from sources like YouTube, Soundcloud, Bandcamp, etc.
 
-\divider
 
-\cvevent{repl.vim}{github.com/ujihisa/repl.vim}{}{}
-Vim plugin that provides bindings for summoning an interactive environment with 
-the code that is being written. My contributions include additional code to make 
-the plugin compatible with Racket/Scheme source files and interactive environments
+% \cvevent{repl.vim}{github.com/ujihisa/repl.vim}{}{}
+% Vim plugin that provides bindings for summoning an interactive environment with 
+% the code that is being written. My contributions include additional code to make 
+% the plugin compatible with Racket/Scheme source files and interactive environments
 
 \medskip
 
