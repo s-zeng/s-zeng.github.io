@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/Arch Linux) (preloaded format=xelatex 2018.12.18)  13 JAN 2019 17:32
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/Arch Linux) (preloaded format=xelatex 2018.12.18)  13 JAN 2019 23:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1002,14 +1002,14 @@ LaTeX Font Info:    ... okay on input line 69.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(28.45274pt, 329.76746pt, 256.0748pt)
-* v-part:(T,H,B)=(56.9055pt, 702.49855pt, 35.56593pt)
+* v-part:(T,H,B)=(64.01869pt, 695.38536pt, 35.56593pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
 * \textwidth=329.76746pt
-* \textheight=702.49855pt
+* \textheight=695.38536pt
 * \oddsidemargin=-43.81725pt
 * \evensidemargin=-43.81725pt
-* \topmargin=-52.36449pt
+* \topmargin=-45.2513pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=11.0pt
@@ -1107,7 +1107,7 @@ Package logreq Info: Writing requests to 'resume.run.xml'.
 Here is how much of TeX's memory you used:
  34378 strings out of 492956
  721825 string characters out of 6139023
- 1196377 words of memory out of 5000000
+ 1198375 words of memory out of 5000000
  37978 multiletter control sequences out of 15000+600000
  538957 words of font info for 64 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
