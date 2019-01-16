@@ -23,7 +23,7 @@
 %% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
 % \documentclass[10pt,a4paper,normalphoto]{altacv}
 
-\documentclass[11pt,letterpaper]{altacv}
+\documentclass[10pt,letterpaper]{altacv}
 
 %% AltaCV uses the fontawesome and academicon fonts
 %% and packages.
@@ -36,7 +36,7 @@
 
 
 % Change the page layout if you need to
-\geometry{left=1cm,right=9cm,marginparwidth=7.0cm,marginparsep=1.2cm,top=2.25cm,bottom=1.25cm}
+\geometry{left=1cm,right=9cm,marginparwidth=7.0cm,marginparsep=1.2cm,top=1.20cm,bottom=1.25cm}
 
 % Change the font if you want to.
 
@@ -105,10 +105,12 @@
 % demand/stress on company products for the purpose of augmenting performance, 
 % assuring quality, and detecting security issues.
 \begin{itemize}
-    \item Automated stress testing on company products and networks using Python
-    \item Developed custom TCP-interfacing implementations of IETF RFCs to 
-        properly debug non standards-compliant network stacks
-    \item Caught and reported multiple bugs and issues in Clojure code bases, 
+    \item Automated stress testing on company products and networks using 
+        \textbf{Python}
+    \item Developed custom TCP-interfacing implementations of IETF RFCs in 
+        \textbf{Bash} and \textbf{Python} to properly debug non 
+        standards-compliant network stacks
+    \item Caught and reported multiple bugs and issues in \textbf{Clojure} code, 
         leading to large performance increases and major security fixes
 \end{itemize}
 
@@ -118,10 +120,10 @@
 % Created internal-use development tools, performing both front-end and back-end 
 % development using web technologies such as Ruby on Rails and node.js
 \begin{itemize}
-    \item Scraped statistics and metrics from across the web using Ruby to 
-        interface with REST APIs
-    \item Delivered data to clients through web interfaces constructed with Ruby 
-        on Rails, HTML/CSS, and Javascript derivatives
+    \item Fetched and formatted statistics and metrics from network endpoints 
+        using \textbf{Ruby (on Rails)} and \textbf{Sinatra}
+    \item Constructed front-end web pages using \textbf{HTML}, \textbf{CSS}, and 
+        \textbf{Coffeescript} to present statistics to clients
 \end{itemize}
 
 % \divider
@@ -134,25 +136,31 @@
 
 \cvsection{Projects}
 
-% \cvevent{Soapstone}{github.com/Ederator1/ARSoapstone}{}{}
-% An Android app that uses Augmented Reality to allow users to place virtual 
-% graffiti, tags, and messages anywhere in the world.
+\cvevent{Polynomial Interpolator}{github.com/s-zeng/interpoly}{}{}
+\begin{itemize}
+    \item Developed a small \textbf{Haskell} based CLI utility that generates a 
+        minimum degree polynomial to interpolate over any finite list of numbers
+\end{itemize}
 
-% \divider
+\divider
 
 \cvevent{Neural Network Based Automatic Midi Music Generator}{github.com/s-zeng/rag-shenanigann}{}{}
-A combination of curated tools and original scripts that collectively automate 
-the process of generating original music tracks, based on the style of music 
-files provided as training data.
-% \begin{itemize}
-% \item Details
-% \end{itemize}
+\begin{itemize}
+    \item Scraped and preprocessed web MIDI files into neural network 
+        consumable text format with a suite of \textbf{Python} scripts
+    \item Automated training deployment of \textbf{Lua} based recurrent neural 
+        networks with \textbf{Docker}
+\end{itemize}
 
 \divider
 
 \cvevent{Discord API Music Player Bot}{github.com/s-zeng/Zengyatta}{}{}
-A bot written for the Discord voice and messaging client that can play audio in 
-voice channels from sources like YouTube, Soundcloud, Bandcamp, etc.
+\begin{itemize}
+    \item Interfaced with the Discord REST API using \textbf{Java} to create a 
+        bot that plays music in voice channels
+    \item Reverse engineered Bandcamp's web services to enable the use of 
+        Bandcamp links as a music source
+\end{itemize}
 
 
 % \cvevent{repl.vim}{github.com/ujihisa/repl.vim}{}{}

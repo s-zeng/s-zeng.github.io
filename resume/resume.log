@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/Arch Linux) (preloaded format=xelatex 2018.12.18)  13 JAN 2019 23:39
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/Arch Linux) (preloaded format=xelatex 2019.1.14)  16 JAN 2019 00:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -10,8 +10,8 @@ Document Class: altacv 2018/07/27 AltaCV v1.1.4, yet another alternative class
 for a résumé/curriculum vitae.
 (/usr/share/texmf-dist/tex/latex/extsizes/extarticle.cls
 Document Class: extarticle 1996/10/08 v1.0 Non Standard LaTeX document class
-(/usr/share/texmf-dist/tex/latex/base/size11.clo
-File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+(/usr/share/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 (/usr/share/texmf-dist/tex/latex/base/exscale.sty
 Package: exscale 2014/09/29 v2.1h Standard LaTeX package exscale
@@ -1002,22 +1002,22 @@ LaTeX Font Info:    ... okay on input line 69.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(28.45274pt, 329.76746pt, 256.0748pt)
-* v-part:(T,H,B)=(64.01869pt, 695.38536pt, 35.56593pt)
+* v-part:(T,H,B)=(34.14322pt, 725.26083pt, 35.56593pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
 * \textwidth=329.76746pt
-* \textheight=695.38536pt
+* \textheight=725.26083pt
 * \oddsidemargin=-43.81725pt
 * \evensidemargin=-43.81725pt
-* \topmargin=-45.2513pt
+* \topmargin=-75.12677pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=11.0pt
+* \topskip=10.0pt
 * \footskip=30.0pt
 * \marginparwidth=199.16928pt
 * \marginparsep=34.14322pt
 * \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -1105,11 +1105,11 @@ Package logreq Info: Writing requests to 'resume.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34378 strings out of 492956
- 721825 string characters out of 6139023
- 1198375 words of memory out of 5000000
- 37978 multiletter control sequences out of 15000+600000
- 538957 words of font info for 64 fonts, out of 8000000 for 9000
+ 34361 strings out of 492956
+ 721619 string characters out of 6139024
+ 1203351 words of memory out of 5000000
+ 37968 multiletter control sequences out of 15000+600000
+ 535771 words of font info for 53 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  62i,12n,87p,1131b,745s stack positions out of 5000i,500n,10000p,200000b,80000s
 
