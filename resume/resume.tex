@@ -23,7 +23,7 @@
 %% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
 % \documentclass[10pt,a4paper,normalphoto]{altacv}
 
-\documentclass[10pt,letterpaper]{altacv}
+\documentclass[10pt,a4paper]{altacv}
 
 %% AltaCV uses the fontawesome and academicon fonts
 %% and packages.
@@ -108,18 +108,29 @@
 \cvsection[sidebar]{Experience}
 % \cvsection{Experience}
 
-\cvevent{Performance Engineering/Test Automation Co-op}{CENX}{July 2017 -- September 2017}{Ottawa, Ontario}
+\cvevent{Performance Engineering Co-op}{Ericsson}{May 2019 -- August 
+2019}{Kanata, Ontario}
+
+\begin{itemize}
+    \item Implemented a robust, pure, and functional metrics system using 
+        \textbf{Clojure} and \textbf{Python}
+    \item Developed a Domain Specific Language interpreter using 
+        \textbf{Lisp} for specialized tooling
+\end{itemize}
+
+\divider
+
+\cvevent{Test Automation Intern}{CENX}{July 2017 -- September 2017}{Ottawa, Ontario}
 % Developed low-level network interface technologies in order to maximize artificial 
 % demand/stress on company products for the purpose of augmenting performance, 
 % assuring quality, and detecting security issues.
 \begin{itemize}
-    \item Automated stress testing on company infrastructure using 
+    \item Automated load testing on company infrastructure using 
         \textbf{Python}
-    \item Developed custom TCP-interfacing implementations of IETF RFCs in 
-        \textbf{Bash} and \textbf{Python} to debug non standards-compliant 
-        network stacks
-    \item Caught and reported multiple bugs and issues in \textbf{Clojure} code, 
-        leading to large performance increases and major security fixes
+    \item Implemented IETF RFC socket protocols in \textbf{Bash} and \textbf{Python} to debug non 
+        standards-compliant network stacks
+    \item Found and reported multiple performance bottlenecks and 
+        moderate-severe security issues
 \end{itemize}
 
 \divider
@@ -140,7 +151,7 @@
 % Taught lessons and lead activities focusing on programming, robotics, and 
 % physics for children aged 9-12
 
-\smallskip
+\bigskip
 
 \cvsection{Projects}
 
@@ -160,19 +171,19 @@
 \begin{itemize}
     \item Developed a small \textbf{Haskell} based CLI utility that generates 
         minimum degree polynomials to interpolate over finite lists of numbers
-    % \item Available on the Arch Linux User Repositories as aur/interpoly
+    \item Available on the Arch Linux User Repositories as aur/interpoly
 \end{itemize}
 
 \divider
 
-\cvevent{Discord API Music Player 
-    Bot}{\href{https://github.com/s-zeng/Zengyatta}{github.com/s-zeng/Zengyatta}}{}{}
-\begin{itemize}
-    \item Interfaced with the Discord REST API using \textbf{Java} to create a 
-        bot that plays music in voice channels
-    \item Reverse engineered Bandcamp's web services to enable the use of 
-        Bandcamp links as a music source
-\end{itemize}
+% \cvevent{Discord API Music Player 
+%     Bot}{\href{https://github.com/s-zeng/Zengyatta}{github.com/s-zeng/Zengyatta}}{}{}
+% \begin{itemize}
+%     \item Interfaced with the Discord REST API using \textbf{Java} to create a 
+%         bot that plays music in voice channels
+%     \item Reverse engineered Bandcamp's web services to enable the use of 
+%         Bandcamp links as a music source
+% \end{itemize}
 
 
 % \cvevent{repl.vim}{github.com/ujihisa/repl.vim}{}{}
