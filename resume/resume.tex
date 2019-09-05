@@ -1,232 +1,281 @@
-%%%%%%%%%%%%%%%%%
-% This is an sample CV template created using altacv.cls
-% (v1.1.4, 27 July 2018) written by LianTze Lim (liantze@gmail.com). Now compiles with pdfLaTeX, XeLaTeX and LuaLaTeX.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy CV/Resume
+% XeLaTeX Template
+% Version 1.0 (5/5/2014)
 %
-%% It may be distributed and/or modified under the
-%% conditions of the LaTeX Project Public License, either version 1.3
-%% of this license or (at your option) any later version.
-%% The latest version of this license is in
-%%    http://www.latex-project.org/lppl.txt
-%% and version 1.3 or later is part of all distributions of LaTeX
-%% version 2003/12/01 or later.
-%%%%%%%%%%%%%%%%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Debarghya Das (http://www.debarghyadas.com)
+% With extensive modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% If you need to pass whatever options to xcolor
-\PassOptionsToPackage{dvipsnames}{xcolor}
-
-%% If you are using \orcid or academicons
-%% icons, make sure you have the academicons
-%% option here, and compile with XeLaTeX
-%% or LuaLaTeX.
-% \documentclass[10pt,a4paper,academicons]{altacv}
-
-%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
-% \documentclass[10pt,a4paper,normalphoto]{altacv}
-
-\documentclass[10pt,a4paper]{altacv}
-
-%% AltaCV uses the fontawesome and academicon fonts
-%% and packages.
-%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
-%%
-%% Compile with LuaLaTeX for best results. If you
-%% want to use XeLaTeX, you may need to install
-%% Academicons.ttf in your operating system's font
-%% folder.
-
-
-% Change the page layout if you need to
-\geometry{left=1cm,right=9cm,marginparwidth=7.0cm,marginparsep=1.2cm,top=1.75cm,bottom=1.25cm}
-
-% Change the font if you want to.
-
-% If using pdflatex:
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage{hyperref}
-% \usepackage[default]{lato}
-
-% If using xelatex or lualatex:
-\setmainfont{Lato}
-
-% Change the colours if you want to
-\definecolor{Mulberry}{HTML}{92243D}
-\definecolor{Cool}{HTML}{E2243D}
-\definecolor{SlateGrey}{HTML}{2E2E2E}
-\definecolor{LightGrey}{HTML}{666666}
-\colorlet{heading}{Cool}
-\colorlet{accent}{Mulberry}
-\colorlet{emphasis}{SlateGrey}
-\colorlet{body}{LightGrey}
-
-% Change the bullets for itemize and rating marker
-% for \cvskill if you want to
-\renewcommand{\itemmarker}{{\small\textbullet}}
-\renewcommand{\ratingmarker}{\faCircle}
-
-\hypersetup{
-    pdfauthor={Simon Zeng},
-    pdftitle={Simon Zeng - Resume},
-    colorlinks = false,
-    allbordercolors=white
-}
-
-%% sample.bib contains your publications
-\addbibresource{sample.bib}
+\documentclass[a4paper]{deedy-resume} % Use US Letter paper, change to a4paper for A4 
 
 \begin{document}
-\name{Simon Zeng}
-\tagline{Software Developer}
-% \photo{2.8cm}{pic2}
-\personalinfo{%
-  % Not all of these are required!
-  % You can add your own with \printinfo{symbol}{detail}
-  \email{\href{mailto:simon.zeng@uwaterloo.ca}{simon.zeng@uwaterloo.ca}}
-  \phone{613-983-9079}
-  % \mailaddress{58 Akenhead Crescent, Kanata, ON, K2T0B4}
-  \homepage{\href{https://s-zeng.github.io}{s-zeng.github.io}}
-  % \twitter{@twitterhandle}
-  \linkedin{\href{https://linkedin.com/in/s-zeng1}{linkedin.com/in/s-zeng1}}
-  \github{\href{https://github.com/s-zeng}{github.com/s-zeng}}
-  % \printinfo{UW}{20769883}
-  %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
-%   \orcid{orcid.org/0000-0000-0000-0000}
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\lastupdated % Print the Last Updated text at the top right
+
+\namesection{}{Simon Zeng}{ % Your name
+\urlstyle{same}\url{http://simonzeng.com} \\ % Your website, LinkedIn profile or other web address
+\href{mailto:contact@simonzeng.com}{contact@simonzeng.com} | 613.983.9079 % Your contact information
 }
 
-%% Make the header extend all the way to the right, if you want.
-\begin{fullwidth}
-\makecvheader
-\end{fullwidth}
+%----------------------------------------------------------------------------------------
+%	LEFT COLUMN
+%----------------------------------------------------------------------------------------
 
-%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
-% \AtBeginEnvironment{itemize}{\small}
+\begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
 
-%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
-%% You can always just use \marginpar{...} if you do
-%% not need to align the top of the contents to any
-%% \cvsection title in the "main" bar.
-\cvsection[sidebar]{Experience}
-% \cvsection{Experience}
+%------------------------------------------------
+% Education
+%------------------------------------------------
 
-\cvevent{Performance Engineering Co-op}{Ericsson}{May 2019 -- August 
-2019}{Kanata, Ontario}
+\section{Education} 
 
-\begin{itemize}
-    \item Implemented a robust, pure, and functional metrics system using 
-        \textbf{Clojure} and \textbf{Python}
-    \item Developed a Domain Specific Language interpreter using 
-        \textbf{Lisp} for specialized tooling
-\end{itemize}
+\subsection{University of Waterloo}
 
-\divider
+% \descript{MEng in Computer Science}
+% \location{Expected Dec 2014 | Ithaca, NY \\ Cum. GPA: N/A}
 
-\cvevent{Test Automation Intern}{CENX}{July 2017 -- September 2017}{Ottawa, Ontario}
-% Developed low-level network interface technologies in order to maximize artificial 
-% demand/stress on company products for the purpose of augmenting performance, 
-% assuring quality, and detecting security issues.
-\begin{itemize}
-    \item Automated load testing on company infrastructure using 
-        \textbf{Python}
-    \item Implemented IETF RFC socket protocols in \textbf{Bash} and \textbf{Python} to debug non 
-        standards-compliant network stacks
-    \item Found and reported multiple performance bottlenecks and 
-        moderate-severe security issues
-\end{itemize}
+% \sectionspace % Some whitespace after the section
 
-\divider
+\descript{Computer Science}
+% \location{Expected May 2014 | Ithaca, NY}
+\location{Expected April 2023}
+% Conc. in Software Engineering \\
+% College of Engineering \\
+% Dean's List (All Semesters) \\
+\location{ Cum. GPA: 85.5 \\
+Major GPA: 88.4}
+% \location{Major GPA: }
 
-\cvevent{Full Stack Web Development Intern}{inBay Technologies}{July 2016 -- August 2016}{Kanata, Ontario}
-% Created internal-use development tools, performing both front-end and back-end 
-% development using web technologies such as Ruby on Rails and node.js
-\begin{itemize}
-    \item Fetched and formatted statistics and metrics from network APIs 
-        using \textbf{Ruby (on Rails)} and \textbf{Sinatra}
-    \item Constructed front-end web pages using \textbf{HTML}, \textbf{CSS}, and 
-        \textbf{Coffeescript} to present statistics to clients
-\end{itemize}
+% \sectionspace % Some whitespace after the section
 
-% \divider
+%------------------------------------------------
 
-% \cvevent{Volunteer STEM Camp Counsellor}{Virtual Ventures}{July 2015 -- August 2015}{Ottawa, Ontario}
-% Taught lessons and lead activities focusing on programming, robotics, and 
-% physics for children aged 9-12
+% \subsection{La Martiniere for Boys}
 
-\bigskip
+% \location{Grad. May 2011 | Kolkata, India}
 
-\cvsection{Projects}
+\sectionspace % Some whitespace after the section
 
-\cvevent{Neural Network Based Automatic MIDI Music 
-    Generator}{\href{https://github.com/s-zeng/rag-shenanigann}{github.com/s-zeng/rag-shenanigann}}{}{}
-\begin{itemize}
-    \item Scraped and preprocessed web MIDI files into neural network 
-        consumable text format with a suite of \textbf{Python} scripts
-    \item Automated process of MIDI manipulation and neural network training 
-        using \textbf{Docker}
-\end{itemize}
+%------------------------------------------------
+% Links
+%------------------------------------------------
 
-\divider
+% \section{Links} 
 
-\cvevent{Polynomial 
-    Interpolator}{\href{https://github.com/s-zeng/interpoly}{github.com/s-zeng/interpoly}}{}{}
-\begin{itemize}
-    \item Developed a small \textbf{Haskell} based CLI utility that generates 
-        minimum degree polynomials to interpolate over finite lists of numbers
-    \item Available on the Arch Linux User Repositories as aur/interpoly
-\end{itemize}
+% Github:// \href{https://github.com/s-zeng}{\bf s-zeng} \\
+% LinkedIn:// \href{https://www.linkedin.com/in/szeng1}{\bf szeng1} \\
+% YouTube:// \href{https://www.youtube.com/user/DeedyDash007}{\bf DeedyDash007} \\
+% Twitter:// \href{https://twitter.com/debarghya_das}{\bf @debarghya\_das} \\
+% Quora:// \href{https://www.quora.com/Debarghya-Das}{\bf Debarghya-Das}
 
-\divider
+% \sectionspace % Some whitespace after the section
 
-% \cvevent{Discord API Music Player 
-%     Bot}{\href{https://github.com/s-zeng/Zengyatta}{github.com/s-zeng/Zengyatta}}{}{}
-% \begin{itemize}
-%     \item Interfaced with the Discord REST API using \textbf{Java} to create a 
-%         bot that plays music in voice channels
-%     \item Reverse engineered Bandcamp's web services to enable the use of 
-%         Bandcamp links as a music source
-% \end{itemize}
+%------------------------------------------------
+% Coursework
+%------------------------------------------------
 
+% \section{Coursework}
 
-% \cvevent{repl.vim}{github.com/ujihisa/repl.vim}{}{}
-% Vim plugin that provides bindings for summoning an interactive environment with 
-% the code that is being written. My contributions include additional code to make 
-% the plugin compatible with Racket/Scheme source files and interactive environments
+% \subsection{Graduate}
 
-\medskip
+% Advanced Machine Learning \\
+% Open Source Software Engineering \\
+% Advanced Interactive Graphics \\
+% Compilers + Practicum \\
+% Cloud Computing
 
-% \cvsection{A Day of My Life}
+% \sectionspace % Some whitespace after the section
 
-% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
-% \wheelchart{outer radius}{inner radius}{
-% comma-separated list of value/text width/color/detail}
-% \wheelchart{1.5cm}{0.5cm}{%
-  % 6/8em/accent!30/{Sleep,\\beautiful sleep},
-  % 3/8em/accent!40/Hopeful novelist by night,
-  % 8/8em/accent!60/Daytime job,
-  % 2/10em/accent/Sports and relaxation,
-  % 5/6em/accent!20/Spending time with family
-% }
+%------------------------------------------------
 
-% \clearpage
-% \cvsection[page2sidebar]{Publications}
+% \subsection{Undergraduate}
 
-% \nocite{*}
+% Information Retrieval \\
+% Operating Systems \\
+% Artificial Intelligence + Practicum \\
+% Functional Programming \\
+% Computer Graphics + Practicum \\
+% {\footnotesize \textit{\textbf{(Research Asst. \& Teaching Asst) }}} \\
+% Unix Tools and Scripting
 
-% \printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
+% \sectionspace % Some whitespace after the section
 
-% \divider
+%------------------------------------------------
+% Skills
+%------------------------------------------------
 
-% \printbibliography[heading=pubtype,title={\printinfo{\faFileTextO}{Journal Articles}},type=article]
+% \section{Skills}
 
-% \divider
+% \subsection{Programming}
 
-% \printbibliography[heading=pubtype,title={\printinfo{\faGroup}{Conference Proceedings}},type=inproceedings]
+% \location{Over 5000 lines:}
+% Java \textbullet{} Shell \textbullet{} JavaScript \textbullet{} Matlab \\
+% OCaml \textbullet{} Python \textbullet{} Rails \textbullet{} \LaTeX\ \\ 
+% \location{Over 1000 lines:}
+% C \textbullet{} C++ \textbullet{} CSS \textbullet{} PHP \textbullet{} Assembly \\
+% \location{Familiar:}
+% AS3 \textbullet{} iOS \textbullet{} Android \textbullet{} MySQL
 
-%% If the NEXT page doesn't start with a \cvsection but you'd
-%% still like to add a sidebar, then use this command on THIS
-%% page to add it. The optional argument lets you pull up the
-%% sidebar a bit so that it looks aligned with the top of the
-%% main column.
-% \addnextpagesidebar[-1ex]{page3sidebar}
+% \sectionspace % Some whitespace after the section
 
+%----------------------------------------------------------------------------------------
+
+\end{minipage} % The end of the left column
+\hfill
+%
+%----------------------------------------------------------------------------------------
+%	RIGHT COLUMN
+%----------------------------------------------------------------------------------------
+%
+\begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
+
+%------------------------------------------------
+% Experience
+%------------------------------------------------
+
+\section{Experience}
+
+\runsubsection{Ericsson Canada}
+\descript{| Performance Engineering Co-op}
+
+\location{May 2019 – Aug 2019 | Kanata, ON}
+\location{Technologies: Clojure}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightitemize}
+% \item 52 out of 2500 applicants chosen to be a KPCB Fellow 2014.
+\item bottom text
+\end{tightitemize}
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+
+\runsubsection{CENX Inc.}
+\descript{| Test Automation Intern}
+
+\location{June 2017 – Sept 2017 | Ottawa, ON}
+\location{Technologies: Python, Bash}
+\begin{tightitemize}
+\item bottom text
+% \item Worked on the YouTube Captions team in primarily vanilla Javascript and Python to plan, design and develop the full stack implementation of a new framework to add and edit Automatic Speech Recognition captions.
+% \item Created a backbone.js-like framework for the Captions editor.
+% \item All code was reviewed, perfected, and pushed to production.
+\end{tightitemize}
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+
+\runsubsection{inBay Technologies}
+\descript{| Full Stack Web Development Intern}
+
+\location{June 2016 – July 2016 | Kanata, ON}
+\begin{tightitemize}
+\item bottom text
+% \item Phabricator is used daily by Facebook, Dropbox, Quora, Asana and more.
+% \item I created the Meme generator, the entire Lipsum application, ported Tokens to different apps, fixed many bugs and more in PHP and Shell.
+% \item Led a team from MIT, Cornell, IC London and UHelsinki for the project.
+\end{tightitemize}
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+% Research
+%------------------------------------------------
+
+\section{Research}
+
+\runsubsection{Cornell Robot Learning Lab}
+\descript{| Head Undergrad Research}
+
+\location{Jan 2014 – Present | Ithaca, NY}
+Worked with \textbf{\href{http://www.cs.cornell.edu/~ashesh/}{Ashesh Jain}} and \textbf{\href{http://www.cs.cornell.edu/~asaxena/}{Prof Ashutosh Saxena}} to create \textbf{PlanIt}, a tool which learns from large scale user preference feedback to plan robot trajectories in human environments. Publication submitted.
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+
+\runsubsection{Cornell Phonetics Lab}
+\descript{| Head Undergraduate Researcher}
+
+\location{Mar 2012 – May 2013 | Ithaca, NY}
+Lead the development of \textbf{QuickTongue}, the first ever breakthrough tongue-controlled game with \textbf{\href{http://conf.ling.cornell.edu/~tilsen/}{Prof Sam Tilsen}} to aid in Linguistics research. Publication submitted.
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+% Awards
+%------------------------------------------------
+
+\section{Awards} 
+
+\begin{tabular}{rll}
+2014	 & top 52/2500 & KPCB Engineering Fellow\\
+2014	 & 2\textsuperscript{nd} most points & Google Code Jam, Qualification Round\\
+2014	 & 1\textsuperscript{st}/50 & Microsoft Coding Competition, Cornell\\
+2013	 & National & Jump Trading Challenge Finalist\\
+2013 & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament \\
+2012 & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot Tournament \\
+2011 & National & Indian National Mathematics Olympiad (INMO) Finalist \\
+2010 & National & Comp. Soc. of India's National Programming Contest\\
+\end{tabular}
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+% Societies
+%------------------------------------------------
+
+\section{Societies} 
+
+\begin{tabular}{rll}
+2014 & top 12\%ile & Tau Beta Pi Engineering Honor Society\\
+2014 & National & The Global Leadership and Education Forum (tGELF)\\
+2012 & National & Golden Key International Honor Society\\
+2012 & National & National Society of Collegiate Scholars\\
+\end{tabular}
+
+\sectionspace % Some whitespace after the section
+
+%----------------------------------------------------------------------------------------
+
+\end{minipage} % The end of the right column
+
+%----------------------------------------------------------------------------------------
+%	SECOND PAGE (EXAMPLE)
+%----------------------------------------------------------------------------------------
+
+%\newpage % Start a new page
+
+%\begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
+
+%\section{Example Section}
+
+%\end{minipage} % The end of the left column
+%\hfill
+%\begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
+
+%\section{Example Section 2}
+
+%\end{minipage} % The end of the right column
+
+%----------------------------------------------------------------------------------------
 
 \end{document}
