@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Arch Linux) (preloaded format=xelatex 2019.8.25)  4 SEP 2019 22:39
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Arch Linux) (preloaded format=xelatex 2019.8.25)  8 SEP 2019 17:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -425,7 +425,7 @@ T;mapping=tex-text;color=2B2B2BFF
 (fontspec)             ;"
 (fontspec)             - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
 
-LaTeX Info: Redefining \rmfamily on input line 32.
+LaTeX Info: Redefining \rmfamily on input line 33.
 
 Package fontspec Info: Raleway-ExtraLight scale = 0.9567325044675999.
 
@@ -452,7 +452,7 @@ ght]/OT:script=latn;language=DFLT;mapping=tex-text;"
 (fontspec)             <->s*[0.9567325044675999]"[fonts/raleway/Raleway-ExtraLi
 ght]/OT:script=latn;language=DFLT;+smcp;mapping=tex-text;"
 
-LaTeX Info: Redefining \sffamily on input line 34.
+LaTeX Info: Redefining \sffamily on input line 35.
 
 (/usr/share/texmf-dist/tex/latex/textpos/textpos.sty
 Package: textpos 2016/06/07 v1.8
@@ -468,7 +468,7 @@ Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 \TP@margin=\dimen152
 \TP@absmargin=\dimen153
 
-Grid set 16 x 16 = 37.34424pt x 52.81541pt
+Grid set 16 x 16 = 38.39343pt x 49.68562pt
 \TPboxrulesize=\dimen154
 \TP@ox=\dimen155
 \TP@oy=\dimen156
@@ -510,50 +510,64 @@ Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \titlewidth=\dimen160
 \titlewidthlast=\dimen161
 \titlewidthfirst=\dimen162
-)) (./resume.aux)
+))
+(/usr/share/texmf-dist/tex/latex/fancybox/fancybox.sty
+Package: fancybox 2010/05/15 1.4
+
+Style option: `fancybox' v1.4 <2010/05/15> (tvz)
+\@fancybox=\box49
+\shadowsize=\dimen163
+\@Sbox=\box50
+\do@VerbBox=\toks18
+\the@fancyput=\toks19
+\this@fancyput=\toks20
+\EndVerbatimTokens=\toks21
+\Verbatim@Outfile=\write3
+\Verbatim@Infile=\read2
+) (./resume.aux)
 \openout1 = `resume.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
 * driver: xetex
-* paper: a4paper
+* paper: letterpaper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(35.56593pt, 526.376pt, 35.56593pt)
-* v-part:(T,H,B)=(21.33955pt, 802.36774pt, 21.33955pt)
-* \paperwidth=597.50787pt
-* \paperheight=845.04684pt
-* \textwidth=526.376pt
-* \textheight=802.36774pt
+* h-part:(L,W,R)=(35.56593pt, 543.16313pt, 35.56593pt)
+* v-part:(T,H,B)=(35.56593pt, 723.83812pt, 35.56593pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=543.16313pt
+* \textheight=723.83812pt
 * \oddsidemargin=-36.70406pt
 * \evensidemargin=-36.70406pt
-* \topmargin=-87.93044pt
+* \topmargin=-73.70406pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
 * \footskip=30.0pt
-* \marginparwidth=57.0pt
+* \marginparwidth=65.0pt
 * \marginparsep=11.0pt
 * \columnsep=10.0pt
 * \skip\footins=9.0pt plus 4.0pt minus 2.0pt
@@ -566,8 +580,8 @@ LaTeX Font Info:    ... okay on input line 24.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box49
-Package hyperref Info: Link coloring OFF on input line 24.
+\AtBeginShipoutBox=\box51
+Package hyperref Info: Link coloring OFF on input line 26.
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -576,12 +590,12 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count278
 )
-LaTeX Info: Redefining \ref on input line 24.
-LaTeX Info: Redefining \pageref on input line 24.
-LaTeX Info: Redefining \nameref on input line 24.
+LaTeX Info: Redefining \ref on input line 26.
+LaTeX Info: Redefining \pageref on input line 26.
+LaTeX Info: Redefining \nameref on input line 26.
  (./resume.out) (./resume.out)
-\@outlinefile=\write3
-\openout3 = `resume.out'.
+\@outlinefile=\write4
+\openout4 = `resume.out'.
 
 
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
@@ -589,62 +603,62 @@ Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 24.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 24.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 24.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 24.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 24.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 24.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 24.
-LaTeX Font Info:    Redeclaring math accent \check on input line 24.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 24.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 24.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 24.
-LaTeX Font Info:    Redeclaring math symbol \colon on input line 24.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 24.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 24.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 24.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 24.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 24.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 24.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 24.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 24.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 24.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 24.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 24.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 24.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 24.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 26.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 26.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 26.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 26.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 26.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 26.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 26.
+LaTeX Font Info:    Redeclaring math accent \check on input line 26.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 26.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 26.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 26.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 26.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 26.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 26.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 26.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 26.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 26.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 26.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 26.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 26.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 26.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 26.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 26.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 26.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 26.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 24.
+(Font)              `operators' in the math version `normal' on input line 26.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/Lato-Lig(0)/m/n on input line 24.
+(Font)                  OT1/cmr/m/n --> TU/Lato-Lig(0)/m/n on input line 26.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 24.
+(Font)              `operators' in the math version `bold' on input line 26.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/Lato-Lig(0)/m/n on input line 24.
+(Font)                  OT1/cmr/bx/n --> TU/Lato-Lig(0)/m/n on input line 26.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  TU/Lato-Lig(0)/m/n --> TU/Lato-Lig(0)/m/n on input line
- 24.
+ 26.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/Lato-Lig(0)/m/it on input line 24.
+(Font)                  OT1/cmr/m/it --> TU/Lato-Lig(0)/m/it on input line 26.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/Lato-Lig(0)/bx/n on input line 24.
+(Font)                  OT1/cmr/bx/n --> TU/Lato-Lig(0)/bx/n on input line 26.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
 (Font)                  OT1/cmss/m/n --> TU/Raleway-ExtraLight(0)/m/n on input 
-line 24.
+line 26.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 24.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 26.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  TU/Lato-Lig(0)/m/n --> TU/Lato-Lig(0)/bx/n on input lin
-e 24.
+e 26.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/Lato-Lig(0)/bx/it on input line 24
+(Font)                  OT1/cmr/bx/it --> TU/Lato-Lig(0)/bx/it on input line 26
 .
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  OT1/cmss/bx/n --> TU/Raleway-ExtraLight(0)/bx/n on inpu
-t line 24.
+t line 26.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 24.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 26.
  ABD: EveryShipout initializing macros
 isodate: babel.sty, (n)german.sty have not been loaded
 
@@ -700,32 +714,32 @@ ge=DFLT;"
 (fontspec)             <->"[fonts/raleway/Raleway-Medium]/OT:script=latn;langua
 ge=DFLT;+smcp;"
 
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 35.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 37.
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <5.5> not available
-(Font)              size <5> substituted on input line 35.
+(Font)              size <5> substituted on input line 37.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 35.
+(Font)              size <5> substituted on input line 37.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <11> on input line 35.
+(Font)              <11> on input line 37.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7.69997> on input line 35.
+(Font)              <7.69997> on input line 37.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5.5> on input line 35.
+(Font)              <5.5> on input line 37.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 35.
+(Font)              size <5> substituted on input line 37.
 
 
 LaTeX Font Warning: Font shape `TU/Lato-Lig(0)/m/sc' undefined
-(Font)              using `TU/Lato-Lig(0)/m/n' instead on input line 47.
+(Font)              using `TU/Lato-Lig(0)/m/n' instead on input line 49.
 
 
 LaTeX Font Warning: Font shape `TU/Lato-Lig(1)/m/sc' undefined
-(Font)              using `TU/Lato-Lig(1)/m/n' instead on input line 47.
+(Font)              using `TU/Lato-Lig(1)/m/n' instead on input line 49.
 
 (/usr/share/texmf-dist/tex/generic/oberdiek/se-ascii-print.def
 File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
@@ -746,28 +760,25 @@ Package fontspec Info: Font family 'Lato-Bol(0)' created for font 'Lato-Bol'
 
 
 LaTeX Font Warning: Font shape `TU/Lato-Bol(0)/bx/n' undefined
-(Font)              using `TU/Lato-Bol(0)/m/n' instead on input line 49.
+(Font)              using `TU/Lato-Bol(0)/m/n' instead on input line 51.
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 229.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 229.
-
-Overfull \hbox (11.05893pt too wide) in paragraph at lines 229--239
-[][]  
- []
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 281.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 330.
 [1
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 281.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 330.
  (./resume.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 281.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 281.
-Package rerunfilecheck Info: File `resume.out' has not changed.
-(rerunfilecheck)             Checksum: 6F836A71206E8B149C69A4B14BC6A1F6.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 330.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 330.
 
+
+Package rerunfilecheck Warning: File `resume.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `resume.out':
+(rerunfilecheck)             Before: 9CC954F8ACFF922AC4E09CF8F50D0C50
+(rerunfilecheck)             After:  FF1EB7F672BEF18CEB1419EB86F1A8BE.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
@@ -775,15 +786,15 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 281.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 330.
  ) 
 Here is how much of TeX's memory you used:
- 20923 strings out of 492922
- 400117 string characters out of 6138851
- 498885 words of memory out of 5000000
- 24839 multiletter control sequences out of 15000+600000
+ 21103 strings out of 492922
+ 402251 string characters out of 6138851
+ 506469 words of memory out of 5000000
+ 25015 multiletter control sequences out of 15000+600000
  534878 words of font info for 75 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 53i,12n,118p,351b,523s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,5n,118p,330b,512s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on resume.pdf (1 page).
