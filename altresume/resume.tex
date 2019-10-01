@@ -1,0 +1,250 @@
+%%%%%%%%%%%%%%%%%
+% This is an sample CV template created using altacv.cls
+% (v1.1.4, 27 July 2018) written by LianTze Lim (liantze@gmail.com). Now compiles with pdfLaTeX, XeLaTeX and LuaLaTeX.
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you need to pass whatever options to xcolor
+\PassOptionsToPackage{dvipsnames}{xcolor}
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages.
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%%
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font
+%% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=8cm,marginparwidth=6.0cm,marginparsep=0.8cm,top=2.00cm,bottom=1.00cm}
+
+\newenvironment{tightitemize} % Defines the tightitemize environment which modifies the itemize environment to be more compact
+{\vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}
+{\end{itemize}\vspace{-\topsep}}
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{fancybox}
+% \usepackage[default]{lato}
+
+% If using xelatex or lualatex:
+\setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{Mulberry}{HTML}{92243D}
+\definecolor{Cool}{HTML}{E2243D}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{Cool}
+\colorlet{accent}{Mulberry}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\hypersetup{
+    pdfauthor={Simon Zeng},
+    pdftitle={Simon Zeng - Resume},
+    colorlinks = false,
+    allbordercolors=white
+}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Simon Zeng}
+\tagline{Software Developer}
+% \photo{2.8cm}{pic2}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{\href{mailto:contact@simonzeng.com}{contact@simonzeng.com}}
+  \phone{613-983-9079}
+  % \mailaddress{58 Akenhead Crescent, Kanata, ON, K2T0B4}
+  \homepage{\href{http://simonzeng.com}{simonzeng.com}}
+  % \twitter{@twitterhandle}
+  \linkedin{\href{https://linkedin.com/in/s-zeng1}{linkedin.com/in/s-zeng1}}
+  \github{\href{https://github.com/s-zeng}{github.com/s-zeng}}
+  % \printinfo{UW}{20769883}
+  %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
+%   \orcid{orcid.org/0000-0000-0000-0000}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+% \AtBeginEnvironment{itemize}{\small}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[sidebar]{Experience}
+% \cvsection{Experience}
+
+\cvevent{Performance Engineering Co-op}{Ericsson}{May 2019 -- August 
+2019}{Kanata, Ontario}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightitemize}
+    \item Developed a pure functional \textbf{Clojure} metrics library to monitor complex JVM 
+        architectures
+    \item Implemented a parser and interpreter in \textbf{Python} for an 
+        internally designed domain specific language
+\end{tightitemize}
+
+\divider
+
+\cvevent{Test Automation Intern}{CENX}{July 2017 -- September 2017}{Ottawa, Ontario}
+% Developed low-level network interface technologies in order to maximize artificial 
+% demand/stress on company products for the purpose of augmenting performance, 
+% assuring quality, and detecting security issues.
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightitemize}
+    \item Developed robust automated UI-testing \textbf{Python} framework for 
+        load-testing web applications
+    \item Created custom implementation of IETF RFC socket protocols to debug 
+        non-standard network stacks
+    \item Discovered multiple security issues, including cryptography 
+        weaknesses, via automated fuzzing
+\end{tightitemize}
+
+\divider
+
+\cvevent{Full Stack Web Development Intern}{inBay Technologies}{July 2016 -- August 2016}{Kanata, Ontario}
+% Created internal-use development tools, performing both front-end and back-end 
+% development using web technologies such as Ruby on Rails and node.js
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightitemize}
+\item Created internal use development tools backed by \textbf{Ruby on Rails} 
+    and \textbf{Coffeescript} to monitor and debug specialized production 
+    systems
+\end{tightitemize}
+
+% \divider
+
+% \cvevent{Volunteer STEM Camp Counsellor}{Virtual Ventures}{July 2015 -- August 2015}{Ottawa, Ontario}
+% Taught lessons and lead activities focusing on programming, robotics, and 
+% physics for children aged 9-12
+
+\medskip
+
+\cvsection{Projects}
+
+\cvevent{Board To 
+Latex}{\href{https://github.com/s-zeng/board-to-latex}{github.com/s-zeng/board-to-latex}}{}{}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightitemize}
+    \item \textbf{React} webapp that transcribes photos of chalkboards and whiteboards to 
+        latex, with OCR handled by a \textbf{Flask} backend
+\end{tightitemize}
+
+\divider
+
+\cvevent{Machine Learning Ragtime 
+Generator}{\href{https://github.com/s-zeng/rag-shenanigann}{github.com/s-zeng/rag-shenanigann}}{}{}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightitemize}
+    \item A suite of \textbf{Python} scripts that scrape ragtime MIDI files from 
+        the web, and preprocesses them into a custom machine-readable format 
+        designed for easy neural network training, then converts model output 
+        back to midi
+\end{tightitemize}
+
+\divider
+
+\cvevent{Tiny Polynomial Interpolator}{\href{https://github.com/s-zeng/interpoly}{github.com/s-zeng/interpoly}}{}{}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightitemize}
+    \item Extremely small polynomial interpolating CLI tool written in 15 lines (447 
+        bytes) of \textbf{Haskell}
+    \item Uses a custom technique with better precision than Lagrange 
+        interpolation
+\end{tightitemize}
+
+% \divider
+
+% \cvevent{Discord API Music Player 
+%     Bot}{\href{https://github.com/s-zeng/Zengyatta}{github.com/s-zeng/Zengyatta}}{}{}
+% \begin{itemize}
+%     \item Interfaced with the Discord REST API using \textbf{Java} to create a 
+%         bot that plays music in voice channels
+%     \item Reverse engineered Bandcamp's web services to enable the use of 
+%         Bandcamp links as a music source
+% \end{itemize}
+
+
+% \cvevent{repl.vim}{github.com/ujihisa/repl.vim}{}{}
+% Vim plugin that provides bindings for summoning an interactive environment with 
+% the code that is being written. My contributions include additional code to make 
+% the plugin compatible with Racket/Scheme source files and interactive environments
+
+\smallskip
+
+% \cvsection{A Day of My Life}
+
+% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+% \wheelchart{outer radius}{inner radius}{
+% comma-separated list of value/text width/color/detail}
+% \wheelchart{1.5cm}{0.5cm}{%
+  % 6/8em/accent!30/{Sleep,\\beautiful sleep},
+  % 3/8em/accent!40/Hopeful novelist by night,
+  % 8/8em/accent!60/Daytime job,
+  % 2/10em/accent/Sports and relaxation,
+  % 5/6em/accent!20/Spending time with family
+% }
+
+% \clearpage
+% \cvsection[page2sidebar]{Publications}
+
+% \nocite{*}
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
+
+% \divider
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faFileTextO}{Journal Articles}},type=article]
+
+% \divider
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faGroup}{Conference Proceedings}},type=inproceedings]
+
+%% If the NEXT page doesn't start with a \cvsection but you'd
+%% still like to add a sidebar, then use this command on THIS
+%% page to add it. The optional argument lets you pull up the
+%% sidebar a bit so that it looks aligned with the top of the
+%% main column.
+% \addnextpagesidebar[-1ex]{page3sidebar}
+
+
+\end{document}
