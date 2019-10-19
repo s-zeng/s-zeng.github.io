@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Arch Linux) (preloaded format=xelatex 2019.8.25)  5 OCT 2019 17:20
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Arch Linux) (preloaded format=xelatex 2019.8.25)  19 OCT 2019 01:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1255,7 +1255,17 @@ LaTeX Info: Redefining \nameref on input line 82.
 \@outlinefile=\write8
 \openout8 = `resume.out'.
 
- (./sidebar.tex) [1
+ (./sidebar.tex
+LaTeX Font Info:    Try loading font information for U+msa on input line 115.
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 115.
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)) [1
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 250.
@@ -1270,12 +1280,12 @@ Package logreq Info: Writing requests to 'resume.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42235 strings out of 492922
- 846265 string characters out of 6138851
- 1334778 words of memory out of 5000000
- 45813 multiletter control sequences out of 15000+600000
- 535912 words of font info for 54 fonts, out of 8000000 for 9000
+ 42228 strings out of 492922
+ 845935 string characters out of 6138851
+ 1325777 words of memory out of 5000000
+ 45791 multiletter control sequences out of 15000+600000
+ 537627 words of font info for 64 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 62i,7n,87p,1151b,773s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,6n,87p,1151b,745s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on resume.pdf (1 page).
