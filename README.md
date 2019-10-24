@@ -4,4 +4,6 @@ That's me.
 
 [This](https://www.linkedin.com/in/s-zeng1/) is my LinkedIn.
 
+[Here](/eduresume/Zeng_Simon_Resume.pdf) is my resume.
+
 And you can reach me by e-mail [here](contact@simonzeng.com).

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Arch Linux) (preloaded format=xelatex 2019.8.25)  19 OCT 2019 01:44
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Arch Linux) (preloaded format=xelatex 2019.8.25)  23 OCT 2019 21:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1282,7 +1282,7 @@ Package logreq Info: Writing requests to 'resume.run.xml'.
 Here is how much of TeX's memory you used:
  42228 strings out of 492922
  845935 string characters out of 6138851
- 1325777 words of memory out of 5000000
+ 1325778 words of memory out of 5000000
  45791 multiletter control sequences out of 15000+600000
  537627 words of font info for 64 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
