@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Arch Linux) (preloaded format=xelatex 2020.2.4)  25 FEB 2020 13:27
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Arch Linux) (preloaded format=xelatex 2020.2.4)  26 FEB 2020 04:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1163,14 +1163,14 @@ LaTeX Font Info:    ... okay on input line 82.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(28.45274pt, 341.43309pt, 227.62204pt)
-* v-part:(T,H,B)=(56.9055pt, 759.6886pt, 28.45274pt)
+* v-part:(T,H,B)=(34.14322pt, 782.45088pt, 28.45274pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=341.43309pt
-* \textheight=759.6886pt
+* \textheight=782.45088pt
 * \oddsidemargin=-43.81725pt
 * \evensidemargin=-43.81725pt
-* \topmargin=-52.36449pt
+* \topmargin=-75.12677pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -1276,25 +1276,15 @@ LaTeX Info: Redefining \nameref on input line 82.
 \openout8 = `resume.out'.
 
  (./sidebar.tex
-LaTeX Font Info:    Trying to load font information for U+msa on input line 122
-.
-
-(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 122
-.
-
-(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)) [1
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd)) [1
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 296.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 296.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 298.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 298.
  (./resume.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 296.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 296.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 298.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 298.
 Package rerunfilecheck Info: File `resume.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E.
 Package logreq Info: Writing requests to 'resume.run.xml'.
@@ -1302,12 +1292,12 @@ Package logreq Info: Writing requests to 'resume.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 43638 strings out of 492483
- 875061 string characters out of 6134980
- 1395850 words of memory out of 5000000
- 47635 multiletter control sequences out of 15000+600000
- 537627 words of font info for 64 fonts, out of 8000000 for 9000
+ 43639 strings out of 492483
+ 875050 string characters out of 6134980
+ 1398854 words of memory out of 5000000
+ 47637 multiletter control sequences out of 15000+600000
+ 537619 words of font info for 63 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 68i,6n,91p,1151b,772s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,12n,91p,1151b,772s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on resume.pdf (1 page).
