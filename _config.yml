@@ -5,3 +5,5 @@ email: contact@simonzeng.com
 url: "https://simonzeng.com/"
 
 remote_theme: broccolini/swiss
+plugins:
+  - jekyll-feed
