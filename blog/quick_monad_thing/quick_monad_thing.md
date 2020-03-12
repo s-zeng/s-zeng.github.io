@@ -7,7 +7,21 @@ import Control.Monad
 
 I recently wrote a bunch of code at work today that was a relatively common real worl use of monads. Thought I'd share here.
 
-By the way, this is both a valid pandoc markdown file AND a haskell source file! You can run with `ghci <this_file>` or compile to pdf with `pandoc -o output.pdf <this_file>`
+By the way, this is both a valid markdown file AND a haskell source file! 
+
+To run in Haskell, you need the package [markdown-unlit](https://github.com/sol/markdown-unlit). Then run:
+
+```
+ghci -pgmL markdown-unlit <this_file>
+```
+
+Or using Pandoc, you can compile to pdf:
+
+```
+pandoc -o output.pdf <this_file>
+```
+
+## Do, or do not; there is no try
 
 Suppose you want to do the following:
 
