@@ -4,6 +4,6 @@ description: Software Developer and Computer Science Student
 email: contact@simonzeng.com
 url: "https://simonzeng.com/"
 
-remote_theme: adueck/good-clean-read
+remote_theme: coogie/oscailte
 plugins:
   - jekyll-feed
