@@ -1,2 +1,20 @@
 title: Simon Zeng
+author: Simon Zeng
 description: Software Developer and Computer Science Student 
+email: contact@simonzeng.com
+url: "https://simonzeng.com/"
+
+remote_theme: huangyz0918/moving
+plugins:
+  - jekyll-feed
+
+moving:
+  about_you: Software Developer and Computer Science Student
+  # avatar_url: example.com
+  date_format: "%F"
+  back_to: "Index"
+  social_links:
+    # rss: RSS
+    github: s-zeng
+    # facebook: 
+    linkedin: s-zeng1
