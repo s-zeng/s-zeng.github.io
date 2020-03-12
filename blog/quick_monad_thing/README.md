@@ -2,10 +2,12 @@
 
 ```haskell
 import Control.Monad
--- Abraham Lincoln, 2019
+-- Simon Peyton Jones, 1992, probably
 ```
 
-I recently wrote a bunch of code at work today that was a relatively common real worl use of monads. Thought I'd share here.
+Some quick exposition on why monads can be useful. This is still an incomplete 
+and somewhat incoherent document; I intend on writing a proper monad tutorial at 
+a later date in time.
 
 By the way, this is both a valid markdown file AND a haskell source file! 
 
