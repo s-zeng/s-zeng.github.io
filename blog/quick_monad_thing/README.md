@@ -28,7 +28,7 @@ pandoc -o output.pdf <this_file>
 Suppose you want to do the following:
 
 1. Take an integer as input
-2. Verify that it's a certain form (i.e. a multiple of 7 maybe) (in real world, this was verifying a checksum)
+2. Verify that it's a certain form (i.e. verify a checksum maybe)
 3. Check that a corresponding element exists in a database
 4. Verify that the value attached to that element in the database is also a valid form
 
@@ -45,7 +45,7 @@ def f(x):
 ```
 
 You can probably see that as checks and conditions and complexity grows with this kind of thing, it can quickly get unwieldy.
-The natural response for this in langauges like Python, of course, is to ask for forgiveness rather than permission: just do the computations first and catch exceptions later.
+The natural response for this in languages like Python, of course, is to ask for forgiveness rather than permission: just do the computations first and catch exceptions later.
 
 The problem with that approach, especially with larger code bases, and multiple engineers working on the same codebase, is that it becomes increasingly difficult to tell when something will throw an error, which errors will be thrown, when to catch errors (are these errors already handled lower/higher on the stack?), and in particular, it's almost impossible to guarantee that your code will not crash.
 
@@ -70,7 +70,8 @@ Back to our earlier example: in Haskell, throwing exceptions willy nilly is bad 
 You want your type signatures to represent something that is failable.
 Because ultimately, with a properly constructed type definition, then successful compilation => never crashing!!!
 
-So for our example monad, we have a data type that can either hold the successful result of a computation, or an object describing an error that has occured.
+So for our example monad, we have a data type that can either hold the 
+successful result of a computation, or an object describing an error that has occurred.
 
 ```haskell
 data Exceptable a = Error String | Result a deriving (Show)
@@ -86,7 +87,7 @@ instance Monad Exceptable where
     (Result y) >>= f = f y
 ```
 
-For compatibilty reasons, I also need to define the Applicative and Functor instance.
+For compatibility reasons, I also need to define the Applicative and Functor instance.
 I won't explain those for now, but you can look it up for interest. 
 
 ```haskell
@@ -101,18 +102,12 @@ The core of monadic programming style, are functions of the form `(a -> m b)`.
 The secret is that monads make it extremely easy to chain and sequence functions of that form together. So it is extremely easy for separate developers to build smaller building blocks, and then compose our way up to bigger building blocks.
 For instance, we can turn each of our 4 steps into a separate (a -> m b) function, and then chain it all together.
 
-(note: I'm gonna write really contrived versions of what actually happened just for the sake of simplicity and time)
-
 ```haskell
+-- pretend this is a less contrived "checksum" check
 validate_input :: Int -> Exceptable Int
 validate_input x = if x `mod` 7 == 0 then Result x else Error "Bad input"
 
-{-
-This was verifying that the entry reference format was valid in the real world
-So if it was valid, it would return it as a result. If it was invalid, throw error.
-(in real world we have some higher level cleaner ways of doing this kind of check on booleans,
-but the real world version wasn't a simple boolean check anyway so this is just for simplicity)
--}
+-- pretend that this is something to verify valid database query schema
 valid_reference :: Int -> Exceptable Int
 valid_reference 14 = Result 14
 valid_reference 21 = Result 21
@@ -178,16 +173,18 @@ output_func2 :: Int -> Exceptable String
 output_func2 = validate_input >=> valid_reference >=> retrieve_from_database
 ```
 
-so now we can just run:
+...so now we can just run:
 
 ```
--> output_func2 7
+> output_func2 7
 Error "Bad database reference"
--> output_func2 14
+> output_func2 14
 Result "data!"
 ```
 
 So as we get non-error data from other parts of the program, we can just >>= that data into output_func and get more data. Composability of effectful actions is the core idea of monads.
+For those of you in the know, what we did just now was essentially a renamed version of Haskell's built in version of the Either monad.
+The language comes with batteries included!
 
 I ask you again to consider what the python equivalent of this would be.
 To get this kind of simplicity, flatness, and composability in Python, you would need a lot of exception throwing and catching (since if statement chains can't get you this level of flatness).
@@ -196,11 +193,13 @@ Sure, if you were to make something similar to this super small program in that 
 But with large code bases, that quickly breaks down.
 Monads let you keep things clean and flat, no matter how large your code gets.
 
+## Know the kings of England in order categorical
+
 There's a lot more I can talk about monads. There is another reason that they're used - they have a strong theoretical background from category theory.
-A lot of higher level control structures of monads are lifted straight from once-theoretical category theory constructs.
+A lot of higher level control structures surrounding monads are lifted straight from once-theoretical category theory constructs.
 By using the math so directly, we benefit from all the theorems and results that they provide.
 
-A lot more things are monads than one may realize. For example, lists are monads:
+A lot of things are monads! For example, lists are monads:
 
 ```
 instance Monad [] where
@@ -236,7 +235,7 @@ instance Monad (r ->) where
 
 Why is this the implementation you may ask? Because this is the only implementation that follows the monad laws from math. That's beyond the scope of this right now though
 
-So since so many things are monads, that lets us write really general code as control flow stuctures!
+So since so many things are monads, that lets us write really general code as control flow structures!
 For example:
 
 ```haskell
@@ -245,15 +244,25 @@ generalized_cartesian xs ys = do
     x <- xs
     y <- ys
     return (x, y)
-
--- > generalized_cartesian [1, 2] [3, 4]
--- -> [(1, 3), (1, 4), (2, 3), (2, 4)]
--- > generalized_cartesian (Result 3) (Result 4)
--- -> Result (3, 4)
--- And of course, the function monad :)
--- > generalized_cartesian (\x -> x*x) (\x -> x+x) $ 5
--- -> (25, 10)
 ```
+
+We can use this function on a variety of different monads:
+
+```
+> generalized_cartesian [1, 2] [3, 4]
+[(1, 3), (1, 4), (2, 3), (2, 4)]
+> generalized_cartesian (Result 3) (Result 4)
+Result (3, 4)
+> 
+```
+
+And of course, the function monad :)
+
+```
+> generalized_cartesian (\x -> x*x) (\x -> x+x) $ 5
+(25, 10)
+```
+
 
 In general, monads let you structure a potentially stateful computation, by letting you separate the context/structure of a computation from its execution.
 In principle, its possible to write a monad such that the following do block is valid code and behaves like an assembly language:
@@ -269,11 +278,12 @@ do
 Implementation is an exercise for the reader :). 
 
 So long as every monad instance follows the monad laws, then we achieve ultimate control over state, effects, and the order in which things are run.
-We can do so in such a manner that avoids aribtrary control flow (who knows where you'll end up when you throw an exception???),
+We can do so in such a manner that avoids arbitrary control flow (who knows where you'll end up when you throw an exception???),
 that is statically typed (you can tell when something can error/change state just from the type!!!),
 and that can be always flat and doesn't need to nest (unlike big if-chains!).
 Furthermore, the same mathematical structure that allows you to do this has applications in many more areas that allow us to write really really general combinators that can sequence computations of any kind, as long as they are monads!
 
-Sorry if this doesn't make sense it's kinda late when I'm writing this lmao.
+Sorry if this doesn't make sense, it was written in a bit of a rush. I promise 
+I'll expand on this and clarify some things later on.
 But that's the gist of why monads are nice.
 Don't hesitate to ask me any questions if you have any.
