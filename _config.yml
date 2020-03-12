@@ -4,6 +4,5 @@ description: Software Developer and Computer Science Student
 email: contact@simonzeng.com
 url: "https://simonzeng.com/"
 
-remote_theme: coogie/oscailte
 plugins:
   - jekyll-feed
