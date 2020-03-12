@@ -1,4 +1,3 @@
-# Some things I wrote
+# git blog --all --graph
 
-Currently under construction. There's no link to here from the main page, you 
-know; stop poking around!
+Currently under construction.
