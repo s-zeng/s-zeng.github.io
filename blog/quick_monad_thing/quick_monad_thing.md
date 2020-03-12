@@ -1,9 +1,4 @@
-% A quick monad thing
-
----
-author: Simon Zeng
-date: \today
----
+# A quick monad thing
 
 ```haskell
 import Control.Monad
