@@ -253,7 +253,6 @@ We can use this function on a variety of different monads:
 [(1, 3), (1, 4), (2, 3), (2, 4)]
 > generalized_cartesian (Result 3) (Result 4)
 Result (3, 4)
-> 
 ```
 
 And of course, the function monad :)
