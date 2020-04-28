@@ -6,4 +6,4 @@ That's me.
 
 [Here](/eduresume/Zeng_Simon_Resume.pdf) is my resume.
 
-And you can reach me by e-mail [here](contact@simonzeng.com).
+And you can reach me by e-mail [here](mailto:contact@simonzeng.com).
