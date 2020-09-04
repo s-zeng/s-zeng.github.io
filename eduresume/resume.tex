@@ -36,7 +36,7 @@
 
 
 % Change the page layout if you need to
-\geometry{left=1cm,right=8cm,marginparwidth=6.0cm,marginparsep=0.8cm,top=1.20cm,bottom=1.00cm}
+\geometry{left=0.75cm,right=7.75cm,marginparwidth=5.75cm,marginparsep=0.8cm,top=0.75cm,bottom=0.75cm}
 
 \newenvironment{tightitemize} % Defines the tightitemize environment which modifies the itemize environment to be more compact
 {\vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}
@@ -113,6 +113,22 @@
 \cvsection[sidebar]{Experience}
 % \cvsection{Experience}
 
+\cvevent{\textcolor{Mulberry}{TQ Tezos} \textcolor{LightGrey}{{::}} 
+Software Engineering Intern
+}{\textrm{\textcolor{LightGrey}{\normalfont \cvtag{OCaml} \cvtag{Ruby} 
+\cvtag{Haskell}}}}{September 2020 -- 
+December 
+2020}{New York, New York}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightitemize}
+    \item Expected to contribute to OCaml, Ruby, or Haskell products
+\end{tightitemize}
+
+% \smallskip
+\divider
+% \smallskip
+
+
 \cvevent{\textcolor{Mulberry}{Tesla Inc} \textcolor{LightGrey}{{::}} 
 Software Engineering Intern (Firmware Tooling)
 }{\textrm{\textcolor{LightGrey}{\normalfont \cvtag{Haskell} \cvtag{Python} 
@@ -122,16 +138,17 @@ August
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightitemize}
 \item Developed and maintained large Haskell code base responsible for automated firmware 
-    documentation and code generation
-\item Instrumented and completed an extensive porting undertaking from legacy 
-    Haskell codebases to modern statically typed Python
+    documentation, signal, and code generation
+\item Improved Haskell products' performance and runtimes by over 20\%
 \item Responsible for design and implementation of core version control 
     verification infrastructure employed by entire firmware organization
+\item Designed and developed robust firmware signal inspection architecture with 
+    Java and modern statically typed Python
 \end{tightitemize}
 
-\smallskip
+% \smallskip
 \divider
-\smallskip
+% \smallskip
 
 \cvevent{\textcolor{Mulberry}{Ericsson} \textcolor{LightGrey}{{::}}
 Software Engineering Intern (Performance)}{\textrm{\textcolor{LightGrey}{\normalfont \cvtag{Clojure} 
@@ -139,15 +156,17 @@ Software Engineering Intern (Performance)}{\textrm{\textcolor{LightGrey}{\normal
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightitemize}
     \item Developed pure functional Clojure metrics infrastructure to monitor 
-        complex JVM architectures
+        complex JVM architectures, allowing for insight and discovery of 
+        multiple performance issues
     \item Implemented a parser and interpreter in Python for an 
         internally designed domain specific language specifically tailored for 
-        highly variable performance evaluation environments
+        highly variable performance evaluation environments, greatly reducing 
+        workload for performance team
 \end{tightitemize}
 
-\smallskip
+% \smallskip
 \divider
-\smallskip
+% \smallskip
 
 \cvevent{\textcolor{Mulberry}{CENX Inc} \textcolor{LightGrey}{{::}}
 Software Engineering Intern (Test Automation)}{\textrm{\textcolor{LightGrey}{\normalfont \cvtag{Python} 
@@ -165,9 +184,9 @@ Software Engineering Intern (Test Automation)}{\textrm{\textcolor{LightGrey}{\no
         weaknesses, via automated fuzzing
 \end{tightitemize}
 
-\smallskip
+% \smallskip
 \divider
-\smallskip
+% \smallskip
 
 \cvevent{\textcolor{Mulberry}{inBay Technologies} \textcolor{LightGrey}{{::}}
 Software Engineering Intern (Full Stack)}{\textrm{\textcolor{LightGrey}{\normalfont 
@@ -177,14 +196,15 @@ August 2016}{Kanata, Ontario}
 % development using web technologies such as Ruby on Rails and node.js
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightitemize}
-\item Created internal use development tools backed by Ruby on Rails 
-    and NodeJS to monitor and debug specialized production 
-    systems
+\item Developed internal tools with Ruby on Rails and Javscript
+% \item Created internal use development tools backed by Ruby on Rails 
+%     and NodeJS to monitor and debug specialized production 
+%     systems
 \end{tightitemize}
 
-\smallskip
+% \smallskip
 \divider
-\smallskip
+% \smallskip
 
 \cvevent{\textcolor{Mulberry}{University of Waterloo} \textcolor{LightGrey}{{::}}
 Algebra Teaching Assistant}{\textrm{\textcolor{LightGrey}{\normalfont 
