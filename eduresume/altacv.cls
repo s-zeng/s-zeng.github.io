@@ -131,7 +131,7 @@
 }
 
 \newcommand{\job}[5]{%
-    {\large\textcolor{accent}{#1} \textcolor{body}{{::}}
+    {\large\textcolor{accent}{\textbf{#1}} \textcolor{body}{{::}}
     \textcolor{emphasis}{#2}\par}
   \medskip\normalsize
   % \ifstrequal{#2}{}{}{\smallskip
@@ -144,7 +144,7 @@
 }
 
 \newcommand{\skills}[3]{
-    \textrm{\textcolor{body}{\normalfont
+    \textrm{\textcolor{emphasis}{\normalfont
     \hspace{-0.6em}
     \ifstrequal{#1}{}{}{\cvtag{#1}}
     \ifstrequal{#2}{}{}{\cvtag{#2}}
