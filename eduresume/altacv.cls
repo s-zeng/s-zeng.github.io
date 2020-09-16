@@ -130,6 +130,28 @@
   {\color{emphasis}\large\bfseries{#1}\par}\medskip
 }
 
+\newcommand{\job}[5]{%
+    {\large\textcolor{accent}{#1} \textcolor{body}{{::}}
+    \textcolor{emphasis}{#2}\par}
+  \medskip\normalsize
+  % \ifstrequal{#2}{}{}{\smallskip
+  % \textbf{\color{accent}#2}\par
+  % \smallskip}
+  \ifstrequal{#3}{}{}{{\small\makebox[0.33\linewidth][l]{#3}}}
+  \ifstrequal{#4}{}{}{{\small\makebox[0.33\linewidth][l]{\faCalendar\hspace{0.5em}#4}}}%
+  \ifstrequal{#5}{}{}{{\small\makebox[0.33\linewidth][l]{\faMapMarker\hspace{0.5em}#5}}}\par
+  \medskip\normalsize
+}
+
+\newcommand{\skills}[3]{
+    \textrm{\textcolor{body}{\normalfont
+    \hspace{-0.6em}
+    \ifstrequal{#1}{}{}{\cvtag{#1}}
+    \ifstrequal{#2}{}{}{\cvtag{#2}}
+    \ifstrequal{#3}{}{}{\cvtag{#3}}
+}}
+}
+
 % v1.1.4: fixes inconsistent font size
 \newcommand{\cvevent}[4]{%
   {\large\color{emphasis}#1\par}
