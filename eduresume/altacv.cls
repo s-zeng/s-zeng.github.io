@@ -144,7 +144,7 @@
 }
 
 \newcommand{\skills}[3]{
-    \textrm{\textcolor{emphasis}{\normalfont
+    \textrm{\textcolor{body}{\normalfont
     \hspace{-0.6em}
     \ifstrequal{#1}{}{}{\cvtag{#1}}
     \ifstrequal{#2}{}{}{\cvtag{#2}}
