@@ -131,7 +131,7 @@
 }
 
 \newcommand{\job}[5]{%
-    {\large\textcolor{accent}{\textbf{#1}} \textcolor{body}{{::}}
+    {\large\textcolor{accent}{#1} \textcolor{body}{{::}}
     \textcolor{emphasis}{#2}\par}
   \medskip\normalsize
   % \ifstrequal{#2}{}{}{\smallskip
