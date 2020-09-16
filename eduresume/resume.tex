@@ -24,6 +24,7 @@
 % \documentclass[10pt,a4paper,normalphoto]{altacv}
 
 \documentclass[10pt,a4paper]{altacv}
+% \documentclass[10pt,letter]{altacv}
 
 %% AltaCV uses the fontawesome and academicon fonts
 %% and packages.
@@ -36,7 +37,7 @@
 
 
 % Change the page layout if you need to
-\geometry{left=0.75cm,right=7.55cm,marginparwidth=6cm,marginparsep=0.6cm,top=1.5cm,bottom=1cm}
+\geometry{left=0.75cm,right=7.55cm,marginparwidth=6.35cm,marginparsep=0.55cm,top=1cm,bottom=1cm}
 
 \newenvironment{tightitemize} % Defines the tightitemize environment which modifies the itemize environment to be more compact
 {\vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}
@@ -114,16 +115,21 @@
 % \cvsection{Experience}
 
 \cvevent{\textcolor{Mulberry}{TQ Tezos} \textcolor{LightGrey}{{::}} 
-Software Engineering Intern
+Software Engineering Intern (Blockchain)
 }{\textrm{\textcolor{LightGrey}{\normalfont \cvtag{Blockchain} 
 \cvtag{OCaml}}}}{Sep 2020 -- Dec 2020}{New York, New York}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightitemize}
-    \item Expected to contribute to OCaml, Haskell, and python blockchain 
-        products
+    \item Contributed to Python, Haskell, and OCaml blockchain products
+    \item Authored and formally verified Tezos smart contracts in an OCaml-based 
+        DSL to automate proprietary applications for private blockchains
+    \item Developed and instrumented automated deployment of test and private 
+        chains on Linux machines over Kubernetes
+    \item Constructed peer-to-peer staking topology monitoring and visualization 
+        infrastructure with Python
 \end{tightitemize}
 
-% \smallskip
+\smallskip
 \divider
 % \smallskip
 
@@ -137,14 +143,13 @@ Software Engineering Intern (Firmware Tooling)
 \item Developed and maintained large Haskell code base responsible for automated firmware 
     documentation, code, and signal generation
 \item Improved Haskell products' performance and runtimes by over 20\%
-\item Decreased firmware product build time by over 5 minutes
 \item Responsible for design and implementation of core firmware
     verification infrastructure employed by entire organization
 \item Designed and developed robust firmware signal inspection architecture with 
     Java and modern statically typed Python
 \end{tightitemize}
 
-% \smallskip
+\smallskip
 \divider
 % \smallskip
 
@@ -161,7 +166,7 @@ Teaching Assistant (Algebra)}{\textrm{\textcolor{LightGrey}{\normalfont
     interactive theorem proving
 \end{tightitemize}
 
-% \smallskip
+\smallskip
 \divider
 % \smallskip
 
@@ -173,13 +178,14 @@ Software Engineering Intern (Performance)}{\textrm{\textcolor{LightGrey}{\normal
     \item Developed pure functional Clojure metrics infrastructure to monitor 
         complex JVM architectures, allowing for discovery of multiple 
         performance issues
-    \item Implemented a parser and interpreter in Python for an 
-        internally designed domain specific language specifically tailored for 
-        highly variable performance evaluation environments, greatly reducing 
-        workload for performance team
+    \item Implemented a parser and interpreter for an internally designed domain 
+        specific language specifically tailored for highly variable telecom 
+        network performance evaluation environments, greatly reducing workload 
+        for performance team
+    \item Contributed to Python performance testing applications
 \end{tightitemize}
 
-% \smallskip
+\smallskip
 \divider
 % \smallskip
 
@@ -198,7 +204,7 @@ Software Engineering Intern (Test Automation)}{\textrm{\textcolor{LightGrey}{\no
         weaknesses, via automated fuzzing
 \end{tightitemize}
 
-% \smallskip
+\smallskip
 \divider
 % \smallskip
 
@@ -211,7 +217,7 @@ Software Engineering Intern (Full Stack)}{\textrm{\textcolor{LightGrey}{\normalf
 \begin{tightitemize}
 % \item Developed internal tools with Ruby on Rails and Javscript
 \item Created internal use development tools backed by Ruby on Rails 
-    and NodeJS to monitor and debug specialized production systems
+    and Javascript to monitor and debug specialized production systems
 \end{tightitemize}
 
 % \cvevent{Volunteer STEM Camp Counsellor}{Virtual Ventures}{July 2015 -- August 2015}{Ottawa, Ontario}
