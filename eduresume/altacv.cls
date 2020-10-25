@@ -63,6 +63,7 @@
 
 \setlength{\parindent}{0pt}
 \newcommand{\divider}{\textcolor{body!50}{\hdashrule{\linewidth}{0.6pt}{0.5ex}}\medskip}
+\newcommand{\smalldivider}{\textcolor{body!50}{\hdashrule{\linewidth}{0.6pt}{0.5ex}}\smallskip}
 
 \newenvironment{fullwidth}{%
   \begin{adjustwidth}{}{\dimexpr-\marginparwidth-\marginparsep\relax}}
@@ -166,15 +167,15 @@
 }
 
 \newcommand{\project}[4]{%
-  {\large\color{emphasis}#1\par}
-  \smallskip\normalsize
+  {\large\color{emphasis}\href{https://github.com/#1}{{\color{accent}{\faGithub\hspace{0.1em} #1}}}\par}
+  \medskip\normalsize
   % \ifstrequal{#2}{}{}{\smallskip
   % \textbf{\color{accent}#2}\par
   % \smallskip}
   \ifstrequal{#2}{}{}{{\small\makebox[0.33\linewidth][l]{#2}}}
   \ifstrequal{#3}{}{}{{\small\makebox[0.33\linewidth][l]{\faCalendar\hspace{0.5em}#3}}}%
   \ifstrequal{#4}{}{}{{\small\makebox[0.33\linewidth][l]{\faMapMarker\hspace{0.5em}#4}}}\par
-  \smallskip\normalsize
+  \medskip\normalsize
 }
 
 \newcommand{\cvachievement}[3]{%
