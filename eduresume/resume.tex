@@ -37,7 +37,7 @@
 
 
 % Change the page layout if you need to
-\geometry{left=0.75cm,right=7.55cm,marginparwidth=6.35cm,marginparsep=0.55cm,top=0.75cm,bottom=1cm}
+\geometry{left=1cm,right=7cm,marginparwidth=5.5cm,marginparsep=0.5cm,top=1.1cm,bottom=1cm}
 
 \newenvironment{tightitemize} % Defines the tightitemize environment which modifies the itemize environment to be more compact
 {\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}
@@ -118,7 +118,6 @@
 (Blockchain)}{\skills{Blockchain}{Haskell}{}}{Sep 2020 -- Dec 2020}{New York, 
 New York}
 \begin{tightitemize}
-    \item Contributed to Python and Haskell blockchain products
     \item Authored Tezos smart contracts in a Haskell EDSL to automate 
       proprietary applications for permissioned blockchains
     \item Converted large and fragmented Python-based Tezos Kubernetes
@@ -139,8 +138,9 @@ California}
 \begin{tightitemize}
 \item Developed and maintained large Haskell code base responsible for automated firmware 
     documentation, code, and signal generation
-\item Improved Haskell products' performance and runtimes by over 20\%
-\item Responsible for design and implementation of core firmware
+\item Improved Haskell products' performance and runtimes by over 20\% by 
+  identifying laziness-related space leaks and rewriting hot code paths
+\item Responsible for design and implementation of firmware
     verification infrastructure employed by entire organization
 \item Designed and developed robust firmware signal inspection architecture with 
     Java and modern statically typed Python
@@ -169,11 +169,8 @@ Math}{Teaching}{}}{Sep 2019 -- Dec 2019}{Waterloo, Ontario}
     \item Developed pure functional Clojure metrics infrastructure to monitor 
         complex JVM architectures, allowing for discovery of multiple 
         performance issues
-    \item Implemented a parser and interpreter for an internally designed domain 
-        specific language targeted at highly variable telecom network 
-        performance evaluation environments, greatly reducing workload for 
-        performance team
-    \item Contributed to Python performance testing applications
+    \item Implemented a parser and interpreter for an internally designed 
+      performance-testing DSL
 \end{tightitemize}
 
 \smallskip
@@ -186,8 +183,8 @@ Automation)}{\skills{Python}{Systems}{}}{Jul 2017 -- Sep 2017}{Ottawa, Ontario}
     \item Developed robust automated Python framework for load-testing web apps
     \item Created custom implementation of IETF RFC socket protocols to debug 
         non-standard network stacks
-    \item Discovered multiple security issues, including cryptography 
-        weaknesses, via automated fuzzing
+    \item Discovered and provided patches for multiple security issues, 
+        including cryptography weaknesses, via automated fuzzing
 \end{tightitemize}
 
 \smallskip
