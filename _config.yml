@@ -3,6 +3,7 @@ author: Simon Zeng
 description: Software Developer and Computer Science Student 
 email: contact@simonzeng.com
 url: "https://simonzeng.com/"
+include: [".well-known"]
 
 plugins:
   - jekyll-feed
