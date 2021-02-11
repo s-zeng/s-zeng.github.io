@@ -6,6 +6,11 @@ That's me.
 
 [Here](https://simonzeng.com/resume) is my resume.
 
-And you can reach me by e-mail [here](mailto:contact@simonzeng.com).
+You can reach me by e-mail [here](mailto:contact@simonzeng.com).
 
-P.S. [PGP public key](/pgp)
+Talk to me on [matrix](https://matrix.org/)! You can message me 
+[@sz:simonzeng.com](matrix:user/sz:simonzeng.com)
+
+For end-to-end encrypted communications, you can either reach me on matrix, or 
+use my [PGP public key](/pgp).
+
