@@ -2,7 +2,7 @@
 name:                {{name}}
 version:             0.1.0.0
 github:              "{{github-username}}{{^github-username}}githubuser{{/github-username}}/{{name}}"
-license:             AGPL3
+license:             AGPL-3
 author:              "{{author-name}}{{^author-name}}Author name here{{/author-name}}"
 maintainer:          "{{author-email}}{{^author-email}}example@example.com{{/author-email}}"
 copyright:           "{{copyright}}{{^copyright}}{{year}}{{^year}}2022{{/year}} {{author-name}}{{^author-name}}Author name here{{/author-name}}{{/copyright}}"
@@ -36,46 +36,7 @@ ghc-options:
 - -Wredundant-constraints
 
 default-extensions:
-- BangPatterns
-- BinaryLiterals
-- ConstraintKinds
-- DataKinds
-- DefaultSignatures
-- DeriveDataTypeable
-- DeriveFoldable
-- DeriveFunctor
-- DeriveGeneric
-- DeriveTraversable
-- DerivingStrategies
-- DerivingVia
-- DoAndIfThenElse
-- EmptyDataDecls
-- ExistentialQuantification
-- FlexibleContexts
-- FlexibleInstances
-- FunctionalDependencies
-- GADTs
-- GeneralizedNewtypeDeriving
-- InstanceSigs
-- KindSignatures
-- LambdaCase
-- MultiParamTypeClasses
-- MultiWayIf
-- NamedFieldPuns
-- NoImplicitPrelude
-- OverloadedStrings
-- PartialTypeSignatures
-- PatternGuards
-- PolyKinds
-- RankNTypes
-- RecordWildCards
-- ScopedTypeVariables
-- StandaloneDeriving
-- TupleSections
-- TypeFamilies
-- TypeSynonymInstances
-- ViewPatterns
-
+- GHC2021
 
 library:
   source-dirs: src
