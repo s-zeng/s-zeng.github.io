@@ -35,66 +35,22 @@ ghc-options:
 - -Wpartial-fields
 - -Wredundant-constraints
 
-# TODO: wait for `language: GHC2021` to be supported
+language: GHC2021
+
 default-extensions:
-- BangPatterns
-- BinaryLiterals
-- ConstrainedClassMethods
-- ConstraintKinds
 - DataKinds
 - DefaultSignatures
-- DeriveDataTypeable
-- DeriveFoldable
-- DeriveFunctor
-- DeriveGeneric
-- DeriveLift
-- DeriveTraversable
 - DerivingStrategies
 - DerivingVia
-- DoAndIfThenElse
-- EmptyCase
-- EmptyDataDecls
-- EmptyDataDeriving
-- ExistentialQuantification
-- ExplicitForAll
-# - FieldSelectors
-- FlexibleContexts
-- FlexibleInstances
-- ForeignFunctionInterface
 - FunctionalDependencies
-- GADTSyntax
 - GADTs
-- GeneralizedNewtypeDeriving
-- HexFloatLiterals
-- ImportQualifiedPost
-- InstanceSigs
-- KindSignatures
 - LambdaCase
-- MonomorphismRestriction
-- MultiParamTypeClasses
 - MultiWayIf
-- NamedFieldPuns
-- NamedWildCards
 - NoImplicitPrelude
-- NumericUnderscores
 - OverloadedStrings
 - PartialTypeSignatures
-- PatternGuards
-- PolyKinds
-- PostfixOperators
-- RankNTypes
 - RecordWildCards
-- RelaxedPolyRec
-- ScopedTypeVariables
-- StandaloneDeriving
-- StandaloneKindSignatures
-- StarIsType
-- TraditionalRecordSyntax
-- TupleSections
-- TypeApplications
 - TypeFamilies
-- TypeOperators
-- TypeSynonymInstances
 - ViewPatterns
 
 library:
