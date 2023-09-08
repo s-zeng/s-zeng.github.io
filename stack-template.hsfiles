@@ -86,13 +86,54 @@ main = defaultMain
 main :: IO ()
 main = putStrLn "Test suite not yet implemented"
 
+{-# START_FILE src/Lib.hs #-}
+module Lib (message) where
+
+import Relude
+
+message :: String
+message = "Hello world!"
+
 {-# START_FILE app/Main.hs #-}
 module Main (main) where
 
 import Relude
+import qualified Lib
 
 main :: IO ()
-main = putStrLn "Hello, world!"
+main = putStrLn Lib.message
+
+{-# START_FILE .envrc #-}
+use nix
+
+{-# START_FILE shell.nix #-}
+{ pkgs ? import (fetchTarball "https://github.com/NixOS/nixpkgs/archive/refs/tags/23.05.tar.gz") {} }:
+let
+
+  stack-wrapped = pkgs.symlinkJoin {
+    name = "stack";
+    paths = [ pkgs.stack ];
+    buildInputs = [ pkgs.makeWrapper ];
+    postBuild = ''
+      wrapProgram $out/bin/stack \
+        --add-flags "\
+          --nix \
+        "
+    '';
+  };
+
+in
+pkgs.mkShell {
+  nativeBuildInputs = with pkgs; [ 
+    stack-wrapped
+    haskell.compiler.ghc945 # make this sync with lts version
+  ];
+  # development packages
+  packages = with pkgs; [
+    haskell-language-server
+  ];
+  NIX_PATH = "nixpkgs=" + pkgs.path;
+}
 
 {-# START_FILE README.md #-}
 # {{name}}

@@ -28,10 +28,10 @@ Your beauty, both inside and out, is a constant reminder of how fortunate I am
 to be with you.
 
 From hiking the majestic trails of Gros Morne to traversing the mythical 
-landscapes of Hyrule, there is no one else with whom I'd rather share these 
-experiences. From our attempts at homemade carbonara to dining at 
-Michelin-starred restaurants, there's no one else I'd rather share a meal with. 
-Zelia, you are my ultimate partner in life, love, and adventure.
+landscapes of Hyrule, there is no one else with whom I'd rather experience the 
+world. From our attempts at homemade carbonara to dining at Michelin-starred 
+restaurants, there's no one else with whom I'd rather share a meal. Zelia, you 
+are my ultimate partner in life, love, and adventure.
 
 Nothing has proved that more than the past six months of our wedding planning. 
 Your dedication and love have been evident in every detail. The meticulous care 
@@ -45,7 +45,7 @@ officially married to you, Zelia. So, I can only conclude that every day that
 follows will be even better, as I have the privilege of waking up next to you, 
 my wife.
 
-Zelia, my brilliant bride, I promise to be there for you through all the ups and 
+Zeal, my brilliant bride, I promise to be there for you through all the ups and 
 downs. I promise to be your rock, your partner, and your best friend. Above all, 
 I promise to love you with all my heart, now and forever.
 
