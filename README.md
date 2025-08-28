@@ -6,8 +6,9 @@ That's me.
 
 [Here](https://simonzeng.com/resume) is my resume.
 
+[These](https://notes.simonzeng.com) are some of my ramblings.
+
 My e-mail is [contact@simonzeng.com](mailto:contact@simonzeng.com).
 
-For end-to-end encrypted communications, you can either reach me on matrix, or 
-use my [PGP public key](/pgp).
+For end-to-end encrypted communications, use my [PGP public key](/pgp).
 
